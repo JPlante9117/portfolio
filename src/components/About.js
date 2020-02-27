@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/tester.jpg'
+import img from '../images/portfolio picture.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const imageStyle = {
@@ -17,24 +17,21 @@ const About = () => {
                         <img className="selfImage" src={img} />
                     </div>
                     <div className="col-1-3">
-                        <h2>Hello!</h2>
-                        <p>
-                            Some personal bio here!
+                        <h2 className="aboutIntro">Hello!<br/>I'm Jacques.</h2>
+                        <p className="aboutTopLine">
+                            I'm a Software Engineer and Web Developer from Danbury, Connecticut.
                         </p>
                         <p>
-                        BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH
-                        BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH
-                        BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH BLAHBLAH BLAH
-                        BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH
-                        BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH
-                        BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH
-                        BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH
+                            I enjoy taking on a challenge and conquering problems presented in
+                            code. I love the logic and structure behind code and strive to make it as
+                            elegant and efficient as possible, whether it be JavaScript, Ruby,
+                            React, or others!
                         </p>
                     </div>
                     <div className="col-1-3">
                         <h2>My Interests</h2>
                         <p>
-                            When I'm not working on code, I enjoy spending time:
+                            When I'm elbows-deep in code, you'll find me:
                         </p>
                         <ul>
                             <li>Playing and learning about video games and board games,</li>

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import HeaderContainer from './containers/HeaderContainer'
@@ -7,6 +6,8 @@ import SkillsContainer from './containers/SkillsContainer'
 import About from './components/About'
 import EducationContainer from './containers/EducationContainer'
 import ProjectsContainer from './containers/ProjectsContainer'
+import Contact from './components/Contact';
+import BlogContainer from './containers/BlogContainer';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <SkillsContainer />
       <EducationContainer />
       <ProjectsContainer />
+      <BlogContainer />
+      <Contact />
     </div>
   );
 }

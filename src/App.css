@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -9,7 +13,7 @@ div.centeredLine, .leftLine, .rightLine {
   width: 500px;
   height: 3px;
   padding: 0!important;
-  background: #ccc;
+  background: orange;
   margin-left: auto;
   margin-right: auto;
   float: none;
@@ -89,7 +93,8 @@ h1 {
 .skillsSection {
   display: block;
   background-color: rgb(223, 223, 223);
-  min-height: 50vh;
+  min-height: 500px;
+  border-top: 10px solid rgb(223, 223, 223);
 }
 
 .alignLeft {
@@ -127,7 +132,7 @@ h1.mainHeader {
 
 hr {
   width: 500px;
-  border: 5px solid rgb(172, 149, 172);
+  border: 5px solid orange;
   border-radius: 10px;
 }
 
@@ -152,7 +157,8 @@ p.title {
 
 .tabs {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
+  z-index: 100;
 }
 
 a.tabLinks {
@@ -190,7 +196,7 @@ a.tabLinks:visited {
 
 .aboutSection {
   display: block;
-  min-height: 75vh;
+  min-height: 60vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -199,6 +205,18 @@ a.tabLinks:visited {
 .selfImage {
   height: 500px;
   width: auto;
+  border-radius: 50%;
+  border: 5px solid orange;
+}
+
+.aboutTopLine {
+  text-align: center;
+  font-size: 30px;
+}
+
+.aboutIntro {
+  text-align: center;
+  font-size: 40px;
 }
 
 /* EDUCATION CSS */
@@ -255,3 +273,204 @@ div.schoolDesc {
 }
 
 /* PROJECT CSS */
+
+.projectsSection {
+  display: block;
+  background-color: rgb(223, 223, 223);
+  min-height: 45vh;
+  border: 10px solid rgb(223, 223, 223);
+}
+
+.project {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  display: inline-block;
+  margin: 15px;
+  perspective: 600px;
+}
+
+.projectCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.projectCard:hover .projectFront {
+  transform: rotateY(180deg)
+}
+
+.projectCard:hover .projectBack {
+  transform: rotateY(0deg)
+}
+
+.projectCardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.projectFront {
+  display: table;
+  background: orange;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+  transition-property: transform;
+  backface-visibility: hidden;
+}
+
+.projectFront h2 {
+  z-index: 2;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 1.75em;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px;
+  text-align: center;
+}
+
+
+
+.projectFront img{
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  filter: grayscale(1);
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+.projectBack {
+  background: orange;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transform: rotateY(-180deg);
+  transition-duration: 1s;
+  transition-property: transform;
+  backface-visibility: hidden;
+}
+
+.projectBack p {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  color: whitesmoke;
+  letter-spacing: 0.1em;
+  padding: 4px;
+  text-align: center;
+  top: 10%;
+  position: relative;
+}
+
+.linkTo {
+  width: 50px;
+  height: auto;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.linkTo:hover {
+  filter: saturate(300%);
+  transition: 0.5s;
+}
+
+.linkDiv {
+  position: absolute;
+  bottom: 5%;
+  left: 23%
+}
+
+p.languages {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 5%;
+  letter-spacing: 0.1em;
+}
+
+/* BOTTOM CONTACT CSS */
+
+div.footer {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-top: 5px solid orange;
+}
+
+.contactMe {
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  visibility: visible;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  line-height: 1;
+  margin-top: 50px;
+  border: 1px solid orange;
+  border-image: initial;
+  border-radius: 50px;
+  padding: 1.25rem 1.75rem;
+  display: inline-block;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  color: orange;
+  outline: 0px;
+  transition: 0.5s;
+}
+
+.contactMe:hover {
+  background: orange;
+  color:white;
+}
+
+/* BLOG CSS */
+
+.blog {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  margin: 15px;
+  background: transparent;
+  border: 1px solid orange;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: black;
+  text-decoration: none;
+}
+
+.blog:hover {
+  background: rgb(255, 248, 234);
+  transform: scale(1.05)
+}
+
+.blogDesc {
+  font-size: small;
+}
+
+.blogDate {
+  font-size: smaller;
+}

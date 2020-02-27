@@ -1,18 +1,38 @@
 import React, { Component } from 'react'
+import Project from '../components/Project'
+import ScrollAnimation from 'react-animate-on-scroll'
+
+import organizer from '../images/projectImages/gameorganizer.png'
+import forum from '../images/projectImages/forummaker.png'
+import research from '../images/projectImages/researchlogger.png'
+import runegame from '../images/projectImages/runenumbergame.png'
 
 const projects = [
-    {title: "Game Organizer", image: "", description: "" }
+    {title: "Game Organizer", languages: "JavaScript | Ruby on Rails", image: `${organizer}`, description: "An app designed to help game collectors pick the perfect game for their next event.", github: "https://github.com/JPlante9117/javascript_project", demo: "https://jplante9117.github.io/javascript_project"},
+    {title: "Forum Maker", languages: "Ruby on Rails", image: `${forum}`, description: "Create and customize a forum of your favorite fandom with this app!", github: "https://github.com/JPlante9117/forum_rails_project", demo: "https://www.youtube.com/watch?v=XSHETtlJeOQ&t"},
+    {title: "Pokémon Research Logger", languages: "Ruby | Sinatra", image: `${research}`, description: "Play the role of a Pokémon researcher in this entry logging app.", github: "https://github.com/JPlante9117/sinatra-project", demo: "https://www.youtube.com/watch?v=fxdVBzxdm3M&t"}
+]
+
+const others = [
+    {title: "Rune Number Game", languages: "JavaScript", image: `${runegame}`, description: "A C++ terminal game turned JavaScript. Solve the five mathematical runes to unlock the treasure!", github: "https://github.com/JPlante9117/RuneNumberGameJS", demo: "https://jplante9117.github.io/RuneNumberGameJS"}
 ]
 
 export default class ProjectsContainer extends Component {
+    generateProjects(projects){
+        return projects.map(project => <Project title={project.title} languages={project.languages} image={project.image} desc={project.description} gitlink={project.github} demolink={project.demo} />)
+    }
+
     render(){
         return (
             <div className="projectsSection">
-                <div className="projectsContainer">
-                    <a id="projects"><h1>Projects</h1></a>
-                    <div className="centeredLine" />
-                    {}
-                </div>
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                    <div className="projectsContainer">
+                        <a id="projects"><h1>Recent Projects</h1></a>
+                        <div className="centeredLine" />
+                        {this.generateProjects(projects)}
+                        {this.generateProjects(others)}
+                    </div>
+                </ScrollAnimation>
             </div>
         )
     }
