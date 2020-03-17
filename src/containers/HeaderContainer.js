@@ -27,15 +27,17 @@ export default class HeaderContainer extends Component {
                         <SocialMediaContainer />
                     </div>
                 </ScrollAnimation>
-                <div className="tabs">
-                    <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={0}>
-                        <a className="tabLinks" href="#about">About Me</a>
-                        <a className="tabLinks" href="#skills">Skills</a>
-                        <a className="tabLinks" href="#education">Education</a>
-                        <a className="tabLinks" href="#projects">Projects</a>
-                        <a className="tabLinks" href="#blog">Blog</a>
-                        <a className="tabLinks" href="#contact">Contact Me</a>
-                    </ScrollAnimation>
+                <div className="row">
+                    <div className="tabs">
+                        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={3500} offset={0}>
+                            <a className="tabLinks" href="#about">About</a>
+                            <a className="tabLinks" href="#skills">Skills</a>
+                            <a className="tabLinks" href="#education">Education</a>
+                            <a className="tabLinks" href="#projects">Projects</a>
+                            <a className="tabLinks" href="#blog">Blog</a>
+                            <a className="tabLinks" href="#contact">Contact</a>
+                        </ScrollAnimation>
+                    </div>
                 </div>
             </div>
         )

@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .App {
@@ -10,7 +11,7 @@ html {
 
 div.centeredLine, .leftLine, .rightLine {
   display: block;
-  width: 500px;
+  width: 50vw;
   height: 3px;
   padding: 0!important;
   background: orange;
@@ -54,7 +55,7 @@ div.col-1-2 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 4em;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -87,7 +88,7 @@ h1 {
 
 .skillTitle {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 .skillsSection {
@@ -131,7 +132,7 @@ h1.mainHeader {
 }
 
 hr {
-  width: 500px;
+  width: 50vw;
   border: 5px solid orange;
   border-radius: 10px;
 }
@@ -156,9 +157,11 @@ p.title {
 }
 
 .tabs {
-  position: absolute;
+  position: relative;
   bottom: 30px;
   z-index: 100;
+  width: 90%;
+  font-size: 1em;
 }
 
 a.tabLinks {
@@ -203,20 +206,20 @@ a.tabLinks:visited {
 }
 
 .selfImage {
-  height: 500px;
-  width: auto;
+  height: auto;
+  width: 100%;
   border-radius: 50%;
   border: 5px solid orange;
 }
 
 .aboutTopLine {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 .aboutIntro {
   text-align: center;
-  font-size: 40px;
+  font-size: 1.5em;
 }
 
 /* EDUCATION CSS */
@@ -229,11 +232,6 @@ a.tabLinks:visited {
   display: block;
   background-color: white;
   min-height: 50vh;
-}
-
-.schoolImg {
-  height: 80px;
-  width: auto;
 }
 
 .school {
@@ -473,4 +471,25 @@ div.footer {
 
 .blogDate {
   font-size: smaller;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+	.col-1-2,
+	.col-1-3 { padding: 15px; }
+}
+
+@media screen and (max-width: 800px) {
+	.col-1-2,
+	.col-1-3 { padding: 10px; width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+	.container { max-width: 750px; }
+}
+
+@media screen and (max-width: 640px) {
+	.col-1-2,
+	.col-1-3 { float: none; width: 100%; }
 }
