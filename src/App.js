@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <a id="top" className="anchor" />
       <HeaderContainer />
       <About />
       <SkillsContainer />
