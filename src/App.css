@@ -183,6 +183,10 @@ h1 {
     text-align: left;
     font-size: 3em;
   }
+
+  .skillsSection p {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1600px){
@@ -635,6 +639,16 @@ div.footer {
   border-top: 5px solid orange;
 }
 
+.contact-container {
+  width: 80%;
+}
+
+.contact-text {
+  margin: 10px auto;
+  font-size: 1.15em;
+  line-height: 1.5em;
+}
+
 .contactMe {
   -webkit-font-smoothing: antialiased;
   text-align: center;
@@ -661,6 +675,13 @@ div.footer {
 .contactMe:hover {
   background: orange;
   color:white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .contactMe {
+    margin-top: 100px;
+    transform: scale(2.25);
+  }
 }
 
 /* BLOG CSS */
