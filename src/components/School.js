@@ -7,11 +7,10 @@ const School = (props) => {
             <h2 className="schoolTitle">{props.title}</h2>
             <p className="schoolDegree">{props.degree}</p>
             <div className="schoolDesc">
-                <p className="schoolDesc">
+                <p>
                     {props.desc}
                 </p>
             </div>
-            {/* <img className="schoolImg" src={props.img} /> */}
             <b>Enrolled: </b> {props.time}
         </div>
     )
