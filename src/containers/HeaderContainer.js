@@ -23,7 +23,7 @@ export default class HeaderContainer extends Component {
                         </p>
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={3000}>
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={3000} offset={0}>
                     <div className="row">
                         <SocialMediaContainer />
                     </div>
