@@ -242,37 +242,24 @@ p.title {
 * {
   text-decoration: none;
 }
-.tabs {
-  position: absolute;
-  bottom: 10%;
-  z-index: 100;
-  width: 100%;
-  font-size: 1em;
-}
-
-a.tabLinks:link {
-  color: whitesmoke;
-}
-
-a.tabLinks:visited {
-  color: whitesmoke;
-}
 
 /* SOCIALS CSS */
 
 .socials-container {
+  justify-content: center;
   width: 75%;
   display: inline-block;
 }
 
 .socials {
+  display: inline-block;
   padding: 10px;
-  float: left;
 }
 
 .socialImg {
   filter: grayscale(70%);
   transition: 0.5s;
+  width: 40px;
 }
 
 .socialImg:hover {
