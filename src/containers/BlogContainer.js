@@ -20,7 +20,8 @@ export default class BlogContainer extends Component {
             <div className="blogSection">
                 <ScrollAnimation animateOnce={true} animateIn="slideInRight">
                     <div>
-                        <a id="blog"><h1 className="alignLeft">Blog</h1></a>
+                        <a id="blog" className="anchor" />
+                        <h1 className="alignLeft">Blog</h1>
                         <div className="leftLine" />
                         <h2>Keep up with what I'm doing by reading through some of my blog posts! I regularly post about the projects I'm working on<br/>
                         as well as the challenges I encounter along the way.</h2>

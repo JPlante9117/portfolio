@@ -20,7 +20,8 @@ export default class EducationContainer extends Component {
             <div className="educationSection">
                 <ScrollAnimation animateOnce={true} animateIn="slideInLeft">
                     <div>
-                        <a id="education"><h1 className="alignRight">Education</h1></a>
+                        <a id="education" className="anchor" />
+                        <h1 className="alignRight">Education</h1>
                         <div className="rightLine" />
                         {this.generateEducation()}
                     </div>

@@ -1,6 +1,87 @@
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input, select {
+    vertical-align:middle;
 }
 
 .App {
@@ -109,6 +190,7 @@ h1 {
 div.header {
   background-color: #282c34;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +206,7 @@ h1.mainHeader {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-size: 3.750em;
+  font-size: 2rem;
   font-weight: 900;
   letter-spacing: 0.1em;
   line-height: 1em;
@@ -149,25 +231,22 @@ p.title {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-size: 1.875em;
+  font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 0.1em;
   line-height: 1em;
   text-transform: uppercase;
 }
 
-.tabs {
-  position: relative;
-  bottom: 30px;
-  z-index: 100;
-  width: 90%;
-  font-size: 1em;
-}
-
-a.tabLinks {
-  padding: 10px;
+* {
   text-decoration: none;
-  transition: 0.5s;
+}
+.tabs {
+  position: absolute;
+  bottom: 10%;
+  z-index: 100;
+  width: 100%;
+  font-size: 1em;
 }
 
 a.tabLinks:link {
@@ -180,12 +259,17 @@ a.tabLinks:visited {
 
 /* SOCIALS CSS */
 
-.socials {
+.socials-container {
+  width: 75%;
   display: inline-block;
 }
 
-.socialImg {
+.socials {
   padding: 10px;
+  float: left;
+}
+
+.socialImg {
   filter: grayscale(70%);
   transition: 0.5s;
 }
@@ -207,14 +291,38 @@ a.tabLinks:visited {
 
 .selfImage {
   height: auto;
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
+  margin: 10px auto;
   border: 5px solid orange;
 }
 
-.aboutTopLine {
-  text-align: center;
-  font-size: 1.5em;
+.about-info p {
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+  line-height: 1.5em;
+  padding: 10px;
+}
+
+.about-interests p {
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+  line-height: 1.5em;
+  padding: 10px;
+}
+
+.about-interests ul {
+  margin: 0 auto;
+  list-style-type: circle;
+  text-align: left;
+  width: 70%;
+  padding-bottom: 10px;
+}
+
+.about-interests ul li {
+  line-height: 1.5em;
 }
 
 .aboutIntro {
@@ -473,23 +581,80 @@ div.footer {
   font-size: smaller;
 }
 
-/* MEDIA QUERIES */
+/* NAVBAR */
 
-@media screen and (max-width: 1024px) {
-	.col-1-2,
-	.col-1-3 { padding: 15px; }
+header {
+  background-color: #282c34;
+  height: fit-content;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: 3px solid orange;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 800px) {
-	.col-1-2,
-	.col-1-3 { padding: 10px; width: 100%; }
+header .header-brand{
+  font-size: 24px;
+  color: whitesmoke;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
 }
 
-@media screen and (max-width: 768px) {
-	.container { max-width: 750px; }
+header nav ul {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
 }
 
-@media screen and (max-width: 640px) {
-	.col-1-2,
-	.col-1-3 { float: none; width: 100%; }
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 16px;
+  text-transform: uppercase;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+a.anchor {
+  position: relative;
+  top: -119px;
+}
+
+@media only screen and (min-width: 1000px){
+  header .header-brand{
+    margin: 31px 0;
+    line-height: 38px;
+    text-align: left;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid whitesmoke;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 20px 0 0 20px;
+    float: left;
+  }
+
+  header nav ul li {
+    margin-top: 0;
+  }
+  
+  header nav ul li a {
+    line-height: 60px;
+  }
+
+  a.anchor {
+    top: -100px;
+  }
 }

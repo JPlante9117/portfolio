@@ -29,7 +29,8 @@ export default class ProjectsContainer extends Component {
             <div className="projectsSection">
                 <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                     <div className="projectsContainer">
-                        <a id="projects"><h1>Recent Projects</h1></a>
+                        <a id="projects"  />
+                        <h1>Recent Projects</h1>
                         <div className="centeredLine" />
                         {this.generateProjects(projects)}
                         {this.generateProjects(others)}

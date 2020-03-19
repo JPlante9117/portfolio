@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import SocialMediaContainer from './SocialMediaContainer'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+import Navbar from '../components/Navbar'
 
 export default class HeaderContainer extends Component {
     render() {
@@ -18,7 +19,7 @@ export default class HeaderContainer extends Component {
                 <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={1000}>
                     <div className="row">
                         <p className="title">
-                            SOFTWARE ENGINEER | WEB DEVELOPER
+                            SOFTWARE ENGINEER<br/>WEB DEVELOPER
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -27,18 +28,6 @@ export default class HeaderContainer extends Component {
                         <SocialMediaContainer />
                     </div>
                 </ScrollAnimation>
-                <div className="row">
-                    <div className="tabs">
-                        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={3500} offset={0}>
-                            <a className="tabLinks" href="#about">About</a>
-                            <a className="tabLinks" href="#skills">Skills</a>
-                            <a className="tabLinks" href="#education">Education</a>
-                            <a className="tabLinks" href="#projects">Projects</a>
-                            <a className="tabLinks" href="#blog">Blog</a>
-                            <a className="tabLinks" href="#contact">Contact</a>
-                        </ScrollAnimation>
-                    </div>
-                </div>
             </div>
         )
     }

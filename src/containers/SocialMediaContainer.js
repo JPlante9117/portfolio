@@ -17,7 +17,9 @@ const socials = [
 
 const SocialMediaContainer = () => {
     return(
-        socials.map(social => <SocialMedia image={social.image} link={social.link} />)
+        <div className="socials-container">
+            {socials.map(social => <SocialMedia image={social.image} link={social.link} />)}
+        </div>
     )
 }
 

@@ -27,7 +27,8 @@ export default class SkillsContainer extends Component {
             <div className="skillsSection">
                 <ScrollAnimation animateIn="slideInRight" animateOnce={true}>
                     <div>
-                        <a id="skills"><h1 className="alignLeft">Skills</h1></a>
+                        <a id="skills" className="anchor" />
+                        <h1 className="alignLeft">Skills</h1>
                         <div className="leftLine" />
                         <div>
                             <p>I've worked with a variety of programming languages in creating wep applications. I primarily use a Ruby on Rails API back-end with a JavaScript or React front-end.
