@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5b784035.chunk.css",
-    "main.js": "/portfolio/static/js/main.62916316.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.62916316.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.54c79d05.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.54c79d05.js.map",
+    "main.css": "/portfolio/static/css/main.c035320c.chunk.css",
+    "main.js": "/portfolio/static/js/main.d515b524.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d515b524.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.3bbacbe3.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.3bbacbe3.js.map",
     "static/css/2.5bc09813.chunk.css": "/portfolio/static/css/2.5bc09813.chunk.css",
-    "static/js/2.5c43eaba.chunk.js": "/portfolio/static/js/2.5c43eaba.chunk.js",
-    "static/js/2.5c43eaba.chunk.js.map": "/portfolio/static/js/2.5c43eaba.chunk.js.map",
+    "static/js/2.d08f0142.chunk.js": "/portfolio/static/js/2.d08f0142.chunk.js",
+    "static/js/2.d08f0142.chunk.js.map": "/portfolio/static/js/2.d08f0142.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.0694c26313a20bda95816d37db7bea26.js": "/portfolio/precache-manifest.0694c26313a20bda95816d37db7bea26.js",
+    "precache-manifest.d8ba4d1fc4793634d2129502509e4197.js": "/portfolio/precache-manifest.d8ba4d1fc4793634d2129502509e4197.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.5bc09813.chunk.css.map": "/portfolio/static/css/2.5bc09813.chunk.css.map",
-    "static/css/main.5b784035.chunk.css.map": "/portfolio/static/css/main.5b784035.chunk.css.map",
-    "static/js/2.5c43eaba.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5c43eaba.chunk.js.LICENSE.txt",
+    "static/css/main.c035320c.chunk.css.map": "/portfolio/static/css/main.c035320c.chunk.css.map",
+    "static/js/2.d08f0142.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d08f0142.chunk.js.LICENSE.txt",
+    "static/media/appaday.png": "/portfolio/static/media/appaday.1563b6ac.png",
     "static/media/forummaker.png": "/portfolio/static/media/forummaker.a59ba2f0.png",
     "static/media/gameorganizer.png": "/portfolio/static/media/gameorganizer.c2655dcb.png",
     "static/media/portfolio picture.png": "/portfolio/static/media/portfolio picture.04359e18.png",
@@ -22,10 +23,10 @@
     "static/media/wcsulogo.png": "/portfolio/static/media/wcsulogo.68cd624f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.54c79d05.js",
+    "static/js/runtime-main.3bbacbe3.js",
     "static/css/2.5bc09813.chunk.css",
-    "static/js/2.5c43eaba.chunk.js",
-    "static/css/main.5b784035.chunk.css",
-    "static/js/main.62916316.chunk.js"
+    "static/js/2.d08f0142.chunk.js",
+    "static/css/main.c035320c.chunk.css",
+    "static/js/main.d515b524.chunk.js"
   ]
 }
