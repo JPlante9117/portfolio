@@ -267,6 +267,16 @@ p.title {
   transition: 0.5s;
 }
 
+@media only screen and (min-width: 1000px){
+  .socials-container {
+    width: 100%;
+  }
+  
+  .socialImg {
+    width: 100%;
+  }
+}
+
 /* ABOUT CSS */
 
 .aboutSection {
