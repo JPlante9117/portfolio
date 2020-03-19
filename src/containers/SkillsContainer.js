@@ -30,10 +30,14 @@ export default class SkillsContainer extends Component {
                         <a id="skills" className="anchor" />
                         <h1 className="alignLeft">Skills</h1>
                         <div className="leftLine" />
-                        <div>
-                            <p>I've worked with a variety of programming languages in creating wep applications. I primarily use a Ruby on Rails API back-end with a JavaScript or React front-end.
-                                <br/>Additionally, I have lots of experience working on teams through my career as a music educator.
-                            </p>
+                        <p>
+                            I've worked with a variety of programming languages in creating wep applications. I primarily use a Ruby on Rails API back-end with a JavaScript or React front-end.
+                        </p>
+                        <br/>
+                        <p>
+                            Additionally, I have lots of experience working on teams through my career as a music educator.
+                        </p>
+                        <div className="skillImgRow">
                             {this.generateSkills()}
                         </div>
                     </div>
