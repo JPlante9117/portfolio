@@ -27,7 +27,7 @@ const About = () => {
                     </div>
                     <div className="about-interests">
                         <p>
-                            When I'm elbows-deep in code, you'll find me:
+                            When I'm not elbows-deep in code, you'll find me:
                         </p>
                         <ul>
                             <li>Playing and learning about video games and board games,</li>

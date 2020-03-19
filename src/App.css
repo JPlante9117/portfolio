@@ -188,6 +188,7 @@ h1 {
 /* MAIN HEADER */
 
 div.header {
+  padding-top: 119px;
   background-color: #282c34;
   min-height: 100vh;
   width: 100%;
@@ -283,7 +284,6 @@ a.tabLinks:visited {
 
 .aboutSection {
   display: block;
-  min-height: 60vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -323,6 +323,70 @@ a.tabLinks:visited {
 
 .about-interests ul li {
   line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1000px){
+
+  .aboutSection {
+    display: inline-block;
+    margin: 0 auto;
+    height: fit-content;
+    font-size: 1em;
+  }
+  
+  .selfImage {
+    float: left;
+    height: auto;
+    width: 30%;
+    border-radius: 50%;
+    margin: 1.5%;
+    border: 5px solid orange;
+  }
+
+  .about-info, .about-interests {
+    float: left;
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 8%;
+  }
+  
+  .about-info p {
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    line-height: 1.5em;
+    padding: 10px;
+  }
+  
+  .about-interests p {
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    line-height: 1.5em;
+    padding: 10px;
+  }
+  
+  .about-interests ul {
+    margin: 0 auto;
+    list-style-type: circle;
+    text-align: left;
+    width: 70%;
+    padding-bottom: 10px;
+  }
+  
+  .about-interests ul li {
+    line-height: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+  .aboutSection {
+    font-size: 1.5em;
+  }
+
+  .about-info, .about-interests {
+    padding-top: 10%;
+  }
 }
 
 .aboutIntro {
