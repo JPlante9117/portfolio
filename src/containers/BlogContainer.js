@@ -25,6 +25,7 @@ export default class BlogContainer extends Component {
                         <p className="blogSection-header">Keep up with what I'm doing by reading through some of my blog posts! I regularly post about the projects I'm working on
                         as well as the challenges I encounter along the way.</p>
                         {this.generateBlogs()}
+                        <p className="blog-linkto"><a href="https://jplante9117.github.io" target="_blank">View More . . .</a></p>
                     </div>
                 </ScrollAnimation>
             </div>

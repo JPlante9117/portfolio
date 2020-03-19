@@ -464,6 +464,7 @@ div.schoolDesc {
   .alignRight {
     margin-right: 100px;
     text-align: right;
+    font-size: 3em;
   }
 }
 
@@ -720,6 +721,69 @@ div.footer {
   width: 90%;
   margin: 0 auto;
   padding-top: 5px;
+}
+
+.blog-linkto {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.blog-linkto a {
+  color: orange;
+}
+
+@media only screen and (min-width: 1000px) {
+  .blog {
+    width: 40%;
+    height: 100px;
+    margin-bottom: 20px;
+    margin: 2.5%;
+  }
+}
+
+@media only screen and (min-width: 1575px) {
+
+  .blog {
+    width: 40%;
+    height: 110px;
+    margin-bottom: 20px;
+    margin: 2.5%;
+  }
+  
+  .blogDesc {
+    font-size: 1.15em;
+  }
+  
+  .blogDate {
+    font-size: medium;
+  }
+  
+  .blog-linkto {
+    font-size: 1.5em;
+  }
+  
+  .blog-linkto a {
+    color: orange;
+  }
+
+  .blogSection-header {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .blogTitle {
+    font-size: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
 }
 
 /* NAVBAR */
