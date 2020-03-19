@@ -29,7 +29,7 @@ export default class ProjectsContainer extends Component {
             <div className="projectsSection">
                 <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                     <div className="projectsContainer">
-                        <a id="projects"  />
+                        <a id="projects" className="anchor" />
                         <h1>Recent Projects</h1>
                         <div className="centeredLine" />
                         {this.generateProjects(projects)}

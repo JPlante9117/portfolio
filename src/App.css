@@ -471,6 +471,22 @@ div.schoolDesc {
   .alignRight {
     font-size: 3em;
   }
+
+  .school {
+    font-size: 1.5em;
+  }
+
+  .schoolDesc p {
+    font-size: 1em;
+  }
+
+  p.schoolDegree {
+    font-size: 1.5em;
+  }
+
+  h2.schoolTitle {
+    font-size: 2em;
+  }
 }
 
 /* PROJECT CSS */
