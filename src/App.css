@@ -811,7 +811,7 @@ div.footer {
 
 header {
   background-color: #282c34;
-  height: fit-content;
+  height: 120px;
   width: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-bottom: 3px solid orange;
@@ -854,10 +854,15 @@ header nav ul li a {
 
 a.anchor {
   position: relative;
-  top: -119px;
+  top: -120px;
 }
 
 @media only screen and (min-width: 1000px){
+  
+  header {
+    height: 100px;
+  }
+  
   header .header-brand{
     margin: 31px 0;
     line-height: 38px;

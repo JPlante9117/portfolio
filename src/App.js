@@ -10,20 +10,23 @@ import Contact from './components/Contact';
 import BlogContainer from './containers/BlogContainer';
 import Navbar from './components/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <a id="top" className="anchor" />
-      <HeaderContainer />
-      <About />
-      <SkillsContainer />
-      <EducationContainer />
-      <ProjectsContainer />
-      <BlogContainer />
-      <Contact />
-    </div>
-  );
+class App extends React.Component {
+
+  render(){
+    return (
+      <div className="App">
+        <Navbar />
+        <a id="top" className="anchor" />
+        <HeaderContainer />
+        <About />
+        <SkillsContainer />
+        <EducationContainer />
+        <ProjectsContainer />
+        <BlogContainer />
+        <Contact />
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -18,13 +18,14 @@ const skillData = [
 ]
 
 export default class SkillsContainer extends Component {
+
     generateSkills() {
         return skillData.map(skill => <Skill title={skill.title} image={skill.image} />)
     }
     
     render(){
         return (
-            <div className="skillsSection">
+            <div className="skillsSection" >
                 <ScrollAnimation animateIn="slideInRight" animateOnce={true}>
                     <div>
                         <a id="skills" className="anchor" />
