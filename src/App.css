@@ -811,7 +811,7 @@ div.footer {
 
 header {
   background-color: #282c34;
-  height: 120px;
+  height: fit-content;
   width: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-bottom: 3px solid orange;
@@ -852,7 +852,7 @@ header nav ul li a {
   color: whitesmoke;
 }
 
-a.anchor {
+span.anchor {
   position: relative;
   top: -120px;
 }
@@ -885,7 +885,7 @@ a.anchor {
     line-height: 60px;
   }
 
-  a.anchor {
+  span.anchor {
     top: -100px;
   }
 }

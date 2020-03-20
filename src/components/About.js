@@ -2,19 +2,15 @@ import React from 'react'
 import img from '../images/portfolio picture.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-const imageStyle = {
-    'text-align': 'center'
-}
-
 const About = () => {
     return(
         <div className="aboutSection">
-            <ScrollAnimation animateIn="fadeIn" duration="2" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
                 <div>
-                    <a id="about" className="anchor" />
+                    <span id="about" className="anchor"/>
                     <h1>About Me</h1>
                     <div className="centeredLine" />
-                        <img className="selfImage" src={img} />
+                        <img className="selfImage" src={img} alt="selfImage" />
                     <div className="about-info">
                         <h2 className="aboutIntro">Hello! I'm Jacques.</h2>
                         <p className="aboutTopLine">

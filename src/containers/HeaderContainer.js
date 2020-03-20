@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import SocialMediaContainer from './SocialMediaContainer'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
-import Navbar from '../components/Navbar'
 
 export default class HeaderContainer extends Component {
     render() {

@@ -6,7 +6,8 @@ const Contact = () => {
         <div className="footer">
             <div className="contact-container">
                 <ScrollAnimation animateIn="fadeInDown" animateOnce={true}>
-                    <a id="contact"><h1>Let's Get In Touch</h1></a>
+                    <span id="contact" />
+                    <h1>Let's Get In Touch</h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" delay={1000} animateOnce={true}>
                     <hr/>
@@ -18,7 +19,7 @@ const Contact = () => {
                     </div>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInUp" delay={2500} animateOnce={true}>
-                    <a href="mailto:jacrplante@gmail.com" target="_blank" className="contactMe">Reach Out</a>
+                    <a href="mailto:jacrplante@gmail.com" target="_blank" className="contactMe" rel="noopener noreferrer">Reach Out</a>
                 </ScrollAnimation>
             </div>
         </div>

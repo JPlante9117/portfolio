@@ -6,13 +6,13 @@ import wcsuIcon from '../images/schoolImages/wcsulogo.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const schools = [
-    {title: "Flatiron School", image: `${flatironIcon}`,date: "October 2019 - March 2020", degree: "Software Engineering", description: "I studied Software Engineering at Flatiron School. Here I gained strong knowledge on developmental practices and coding languages including React/Redux, JavaScript, and Ruby/Rails. Additionally, I utilized my teaching skills to assist my colleagues on assignments and projects and during pair programming and self-hosted office hours." },
-    {title: "Western Connecticut State University", image: `${wcsuIcon}`, date: "September 2014 - May 2018", degree: "Bachelor's of Science in Music Education", description: "I studied music education for four years at Western Connecticut State University. During my time at there,  I developed communication, team building, and teaching skills in addition to honing my musical skills. These skills have helped me communicate effectively and unite a team to accomplish goals." }
+    {id: 1, title: "Flatiron School", image: `${flatironIcon}`,date: "October 2019 - March 2020", degree: "Software Engineering", description: "I studied Software Engineering at Flatiron School. Here I gained strong knowledge on developmental practices and coding languages including React/Redux, JavaScript, and Ruby/Rails. Additionally, I utilized my teaching skills to assist my colleagues on assignments and projects and during pair programming and self-hosted office hours." },
+    {id: 2, title: "Western Connecticut State University", image: `${wcsuIcon}`, date: "September 2014 - May 2018", degree: "Bachelor's of Science in Music Education", description: "I studied music education for four years at Western Connecticut State University. During my time at there,  I developed communication, team building, and teaching skills in addition to honing my musical skills. These skills have helped me communicate effectively and unite a team to accomplish goals." }
 ]
 
 export default class EducationContainer extends Component {
     generateEducation(){
-        return schools.map(school => <School title={school.title} time={school.date} degree={school.degree} desc={school.description} img={school.image} />)
+        return schools.map(school => <School key={school.id} title={school.title} time={school.date} degree={school.degree} desc={school.description} img={school.image} />)
     }
     
     render() {
@@ -20,7 +20,7 @@ export default class EducationContainer extends Component {
             <div className="educationSection">
                 <ScrollAnimation animateOnce={true} animateIn="slideInLeft">
                     <div>
-                        <a id="education" className="anchor" />
+                        <span id="education" className="anchor"/>
                         <h1 className="alignRight">Education</h1>
                         <div className="rightLine" />
                         {this.generateEducation()}

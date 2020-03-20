@@ -10,17 +10,17 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 
 const skillData = [
-    {title: "Ruby", image: `${rubyIcon}`},
-    {title: "Ruby on Rails", image: `${railsIcon}` },
-    {title: "JavaScript", image: `${jsIcon}`},
-    {title: "React", image: `${reactIcon}`},
-    {title: "Sinatra", image: `${sinatraIcon}`}
+    {id: 1, title: "Ruby", image: `${rubyIcon}`},
+    {id: 2, title: "Ruby on Rails", image: `${railsIcon}` },
+    {id: 3, title: "JavaScript", image: `${jsIcon}`},
+    {id: 4, title: "React", image: `${reactIcon}`},
+    {id: 5, title: "Sinatra", image: `${sinatraIcon}`}
 ]
 
 export default class SkillsContainer extends Component {
 
     generateSkills() {
-        return skillData.map(skill => <Skill title={skill.title} image={skill.image} />)
+        return skillData.map(skill => <Skill key={skill.id} title={skill.title} image={skill.image} />)
     }
     
     render(){
@@ -28,7 +28,7 @@ export default class SkillsContainer extends Component {
             <div className="skillsSection" >
                 <ScrollAnimation animateIn="slideInRight" animateOnce={true}>
                     <div>
-                        <a id="skills" className="anchor" />
+                        <span id="skills" className="anchor" />
                         <h1 className="alignLeft">Skills</h1>
                         <div className="leftLine" />
                         <p>
