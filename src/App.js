@@ -10,6 +10,12 @@ import Contact from './components/Contact';
 import BlogContainer from './containers/BlogContainer';
 import Navbar from './components/Navbar';
 
+window.onresize = function(){
+  document.body.height = window.innerHeight
+}
+
+window.onresize()
+
 class App extends React.Component {
 
   render(){
